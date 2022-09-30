@@ -1,10 +1,12 @@
 import java.io.IOException;
+import java.io.Serializable;
 
-public class Person {
+public class Person implements Serializable {
     private String firstName;
     private String lastName;
     private Address address;
 
+    public Person(){}
     public Person(String firstName, String lastName, Address address) {
         if (firstName == null || lastName == null || address == null){
             try {
