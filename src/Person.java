@@ -22,7 +22,7 @@ public class Person {
     }
 
 
-    private void setFirstName(String firstName) throws NullFieldException {
+    public void setFirstName(String firstName) throws NullFieldException {
         if (firstName == null)
         {
             try {
@@ -35,7 +35,7 @@ public class Person {
         this.firstName = firstName;
     }
 
-    private void setLastName(String lastName) throws NullFieldException{
+    public void setLastName(String lastName) throws NullFieldException{
         if (lastName == null)
         {
             try {
@@ -48,7 +48,7 @@ public class Person {
         this.lastName = lastName;
     }
 
-    private void setAddress(Address address) throws NullFieldException {
+    public void setAddress(Address address) throws NullFieldException {
         if (address == null)
         {
             try {
@@ -63,15 +63,15 @@ public class Person {
         this.address = address;
     }
 
-    private String getFirstName() {
+    public String getFirstName() {
         return this.firstName;
     }
 
-    private String getLastName() {
+    public String getLastName() {
         return this.lastName;
     }
 
-    private Address getAddress() {
+    public Address getAddress() {
         return this.address;
     }
 
